@@ -9,6 +9,6 @@ github_username:  garciadany
 
 # Build settings
 markdown: kramdown
-permalink: /blog/:title.html
+permalink: /:title.html
 
 excerpt_separator: <!--more-->
