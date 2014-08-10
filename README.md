@@ -1,0 +1,1 @@
+A blog created with [Jekyll](http://jekyllrb.com/) to gather my thoughts and share what I'm learning.
