@@ -1,0 +1,32 @@
+---
+layout: default
+---
+
+<h1 class="blog-title">Danny Garcia</h1>
+<h5 class="sub-title">"The best way to learn is to teach." ~ Frank Oppenheimer</h5>
+<hr>
+
+<div class="posts container">
+
+  <ul class="posts-index">
+    {% for post in site.posts %}
+      <li class="post-excerpt">
+        <div class="post-title">
+          <a href="{{ post.url | prepend: site.baseurl }}">
+            {{ post.title }}
+          </a>
+        </div>
+				<p class="post-date">Posted on: {{ post.date | date: "%b %-d, %Y" }}</p>
+				{{ post.excerpt }}
+        <div class="continue-reading">
+          <a href="{{ post.url | prepend: site.baseurl }}">
+            Continue reading <i class="fa fa-long-arrow-right"></i>
+          </a>
+        </div>
+			</li>
+    {% endfor %}
+  </ul>
+
+  <!--<p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>-->
+
+</div>
