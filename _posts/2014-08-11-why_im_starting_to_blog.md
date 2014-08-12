@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Why I'm Starting To Blog"
-date:   2014-08-08 20:15:28
+date:   2014-08-11 20:15:28
 categories: programming education
 ---
 
