@@ -5,11 +5,11 @@ date:   2015-03-26 20:15:28
 categories: programming commandline command-line software unix linux shell bash zsh
 ---
 
-## Unix Commands
-
 Have you ever wanted to level up your command-line skills, but didn't know where to start? Ever wanted to learn about
 all the command-line utilities available to you, but didn't know where to look? I too had these problems, and I'm going
 to show you how I went about solving them.<!--more-->
+
+## Unix Commands
 
 First off, I wanted to get a list of all the commands available to me so that I could drill down on specific ones and
 learn more about them. From what I've learned, the executables for available commands live in `/usr/bin` and in `/bin`.
