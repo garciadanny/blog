@@ -27,11 +27,11 @@ function *foo() {
 
 or 
 
-```javascript
+{% highlight javascript %}
 function* foo() {
   // ...
 }
-```
+{% endhighlight %}
 
 The way in which we control the execution of a generator function from the outside is by constructing a "*Generator Iterator*". Building on the example above, this is how we would construct an iterator. 
 
