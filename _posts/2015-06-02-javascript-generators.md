@@ -19,11 +19,11 @@ Generator functions are written like normal functions except they have an asteri
 
 *Example*:
 
-```javascript
+{% highlight javascript %}
 function *foo() {
   // ...
 }
-```
+{% endhighlight %}
 
 or 
 
@@ -37,13 +37,13 @@ The way in which we control the execution of a generator function from the outsi
 
 *Example*:
 
-```javascript
+{% highlight javascript %}
 function *foo() {
   // ...
 }
 
 var myGenerator = foo();
-```
+{% endhighlight %}
 
 It's important to note that unlike regular functions, calling generator functions `()` won't execute any of the code within the function; it simply constructs the iterator. 
 
@@ -51,7 +51,7 @@ Now to start executing the code within our generator or to start *iterating on o
 
 *Example*:
 
-```javascript
+{% highlight javascript %}
 function *foo() {
   console.log('Before pausing the function');
   var x = 2 + (yield 3)
@@ -69,13 +69,13 @@ myGenerator.next(2)
 // After un-pausing the function
 // 4
 // { value: undefined, done: true }
-```
+{% endhighlight %}
 
 Here's a more complicated example borrowed from [Kyle Simpson](http://davidwalsh.name/es6-generators) in a more in-depth series of blog posts about ES6 generators (definitely check it out). 
 
 *Example*:
 
-```javascript
+{% highlight javascript %}
 function *foo(x) {
     var y = 2 * (yield (x + 1));
     var z = yield (y / 3);
@@ -92,7 +92,7 @@ myGenerator.next(12)
 
 myGenerator.next(13)
 // { value:42, done:true }
-```
+{% endhighlight %}
 
 Notice how the first time we call `next()`, the value 6 is returned (5 + 1). But what happened to the 3? When we passed in the 3, there was no `yield` expression to to receive what we passed in. The first `next()` paused the generator, and we can only pass values in when un-pausing a generator.
 
